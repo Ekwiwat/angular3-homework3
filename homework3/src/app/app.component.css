@@ -1,0 +1,170 @@
+ul, #myUL {
+    list-style-type: none;
+  }
+  
+  /* Remove margins and padding from the parent ul */
+  #myUL {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the caret/arrow */
+  .caret {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+  }
+
+  .caret-border {
+      border-left: solid 3px #007bff;
+  }
+  
+  /* Create the caret/arrow with a unicode, and style it */
+  .arrow::before {
+    content: "\227A";
+    font-size: 1.3rem;
+    color: rgb(168, 168, 168);
+    float: right;
+  
+  }
+  
+ /*otate the caret/arrow icon when clicked on (using JavaScript) */
+  .arrow-down::before {
+    transform: rotate(-90deg);
+  }
+ 
+  /* Hide the nested list */
+  .nested {
+    display: none;
+    padding-left: 0;
+  }
+  .row {
+    width: 100%;
+  }
+  /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+  .active {
+    display: block;
+  }
+
+  .sidebar-wrapper {
+  
+      background-color: #343a40;
+      height: 100vh;
+      margin-left: 0;
+      padding-left: 0;
+      max-width: 250px;
+      overflow: scroll;
+      transition: 0.5s;
+  }
+
+  .sidebar-collapse {
+      width: 50px;
+  }
+  .sidebar-wrapper a {
+      text-decoration: none;
+      color: rgb(168, 168, 168);
+      font-size: 0.9rem;
+      padding-right: 0;
+     
+  }
+
+  .container-fluid {
+  
+      height: 100vh;
+  }
+
+  .sidebar-wrapper li {
+      margin-top: 20px;
+     
+  }
+
+  .sidebar-wrapper i {
+      padding-left: 15px;
+      margin-right: 10px;
+      font-size: 1.2rem;
+  }
+
+  a:active {
+      color: white;
+      font-weight: bold;
+  }
+
+  .logo-wrapper {
+    background-color: #343a40;
+    padding: 5px;
+  }
+
+  .logo-wrapper img {
+    max-width: 100%;
+    height: 50px;
+  }
+  
+  .head-wrapper {
+    background-color: #343a40;
+  }
+
+  .search-wrapper {
+      width: ;
+      padding-top: 10px;
+      border-top: solid 0.5px rgb(168, 168, 168);
+  }
+  .search-wrapper input{
+      width: 95%;
+      height: 2rem;
+      background-color: #343a40;
+      border: solid 1px white;
+      padding-left: 25px;
+      margin-left: 10px;
+  }
+
+  .row-1 {
+    background-color: #343a40;
+  }
+
+  .container-fluid {
+display: flex;
+  }
+.right-col {
+    padding: 0;
+    width: 100%;
+   
+}
+
+  .top-menu {
+    width: 100%;
+      height: 60px;
+    background-color: #343a40;
+    color: rgb(168, 168, 168);
+    padding-left: 15px;
+    display: flex;
+  }
+
+  .left-icon {
+      float: left;
+      padding: 10px 0px;
+  }
+
+.right-icon {
+    padding: 10px 0px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+}
+
+.right-icon ul li {
+    list-style: none;
+    
+    display: inline-flex;
+    margin-right: 15px;
+}
+
+.top-menu i {
+    font-size: 1.5rem;
+}
+
+.login-name {
+  color: rgb(94, 92, 92);
+}
+
+

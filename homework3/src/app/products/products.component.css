@@ -1,0 +1,85 @@
+.content{
+    margin: 20px;
+    height: 770px;
+    overflow: scroll;
+    
+}
+.accordion {
+    margin: 10px;
+
+    border-radius: 5px;
+}
+
+.accordion-button {
+    background-color: white;
+    color: #343a40;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+button.bt1{
+color: white;
+background-color: #3C8DBC;
+border: none;
+}
+
+button.bt2{
+color: white;
+background-color: #605CA8;
+border: none;
+}
+
+button.bt3, button.bt4{
+color: white;
+background-color: #28A745;
+border: none;
+}
+
+button.bt5{
+color: white;
+background-color: #3D9970;
+border: none;
+}
+button.bt6{
+color: white;
+background-color: #DD4B39;
+border: none;
+}
+
+button.bt7{
+    color: white;
+    background-color: #3C8DBC;
+    border: none;
+    }
+
+button.bt8{
+    color: white;
+    background-color: #3C8DBC;
+    border: none;
+    }
+
+input[type=text] {
+        width: 50%;
+        height: 30px;
+        border: solid 1px grey;
+    }
+select {
+    width: 50%;
+    height: 30px;
+    border: solid 1px grey;
+}
+
+.left-input {
+    justify-content: right;
+}
+
+label > i {
+    color: #3c8dBC;
+}
+
+td > i {
+    color: #3c8dBC;
+}

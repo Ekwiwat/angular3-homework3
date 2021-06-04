@@ -1,0 +1,80 @@
+.content{
+    margin: 20px;
+    height: 770px;
+    overflow: scroll;
+}
+
+.accordion {
+    margin: 10px;
+    border-top: solid 3px #007bff;
+    border-radius: 5px;
+}
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100;
+}
+
+.accordion-button {
+    background-color: white;
+    color: #343a40;
+}
+
+button i {
+    margin-right: 10px;
+}
+
+.type-1, .type-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.type-1 .card {
+width: 32%;
+}
+.type-1 .card .card-header {
+background-color: #D9EDF7;
+color: #17a2b8;;
+}
+
+.type-2 .card {
+    width: 22%;
+    position: relative;
+}
+ 
+.type-2 .card .card-body .card-title{
+     color: white;
+     font-size: 2rem;
+     font-weight: bold;
+    }
+
+    .type-2 .card .card-body .card-text{
+     color: white;
+    }
+
+    .type-2 .inner {
+        position: absolute;
+        color: rgba(0,0,0,0.2);
+        font-size: 4.5rem;
+        top: 10px;
+        left: 65%;
+        transition: 0.5s;
+    }
+
+    .type-2 .inner:hover {
+        position: absolute;
+        color: rgba(0,0,0,0.2);
+        font-size: 5rem;
+        top: 10px;
+        left: 65%;
+    }
+
+    .type-2 .card .card-footer{
+        color: white;
+
+       }
+
+    table {
+        width: 100%;
+    }
+    

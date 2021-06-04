@@ -1,0 +1,205 @@
+<div class="content">
+    <div class="header">
+        <div>
+            <h1>Products</h1>
+        </div>
+        <div class="rigth-head-buttons">
+            <button class="bt1 btn btn-info"><i class="bi bi-plus-square-fill"></i> Add new</button>
+            <button class="bt2 btn btn-info ms-1"><i class="bi bi-file-earmark-pdf"></i> Download catalog as
+                PDF</button>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="bt3 btn btn-info ms-1"><i class="bi bi-download"></i> Export</button>
+                <button type="button" class="bt4 btn btn-primary"><i class="bi bi-caret-down-fill"></i></button>
+            </div>
+
+            <button class="bt5 btn btn-info ms-1"><i class="bi bi-upload"></i> Import</button>
+            <button class="bt6 btn btn-info ms-1"><i class="bi bi-trash"></i> Delete (selected)</button>
+        </div>
+    </div>
+    <div class="search-accordian">
+        <div class="accordion shadow-sm" id="nop-commerce-news">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        <i class="bi bi-search me-2"></i>Search
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body row">
+                        <div class="left-input col-6">
+                            <div class="mb-1 text-end">
+                                <label class="me-2" for="product-name">Product name <i
+                                        class="bi bi-question-circle-fill"></i></label>
+                                <input type="text" name="product-name">
+                            </div>
+
+                            <div class="mb-1 text-end">
+                                <label class="me-2" for="category">Category <i
+                                        class="bi bi-question-circle-fill"></i></label>
+                                <select name="category" id="category">
+                                    <option value="All">All</option>
+                                    <option value="Computers">Computers</option>
+                                    <option value="Computers>>Desktops">Computers>>Desktops</option>
+                                    <option value="Computers>>Notebooks">Computers>>Notebooks</option>
+                                    <option value="Computers>>Software">Computers>>Software</option>
+                                    <option value="Electronics">Electronics</option>
+                                    <option value="Electronics>>Camera&Photo">Electronics>>Camera&Photo</option>
+                                    <option value="Electronics>>Cellphones">Electronics>>Cellphones</option>
+                                    <option value="Electronics>>Others">Electronics>>Others</option>
+                                    <option value="Apparel">Apparel</option>
+                                    <option value="Apparel>>Shoes">Apparel>>Shoes</option>
+                                    <option value="Apparel>>Clothing">Apparel>>Clothing</option>
+                                    <option value="Apparel>>Accessories">Apparel>>Accessories</option>
+                                    <option value="Digital downloads">Digital downloads</option>
+                                    <option value="Books">Books</option>
+                                    <option value="Jewelry">Jewelry</option>
+                                    <option value="Gift cards">Gift cards</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-1 text-center">
+                                <label class="me-2" for="search-subcategories">Search subcategories <i
+                                        class="bi bi-question-circle-fill"></i></label>
+                                <input type="checkbox" name="search-subcategories">
+                            </div>
+
+                            <div class="mb-1 text-end">
+                                <label class="me-2" for="manufacturer">Manufacturer <i
+                                        class="bi bi-question-circle-fill"></i></label>
+                                <select name="manufacturer" id="manufacturer">
+                                    <option value="All">All</option>
+                                    <option value="Apple">Apple</option>
+                                    <option value="HP">HP</option>
+                                    <option value="Nike">Nike</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-1 text-end">
+                                <label class="me-2" for="vendor">Vendor <i
+                                        class="bi bi-question-circle-fill"></i></label>
+                                <select name="vendor" id="vendor">
+                                    <option value="All">All</option>
+                                    <option value="Vendor 1">Vendor 1</option>
+                                    <option value="Vendor 2">Vendor 2</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="right-input col-6">
+                            <div class="mb-1 text-end">
+                                <label class="me-2" for="warehouse">Warehouse <i
+                                        class="bi bi-question-circle-fill"></i></label>
+                                <select name="warehouse" id="warehouse">
+                                    <option value="All">All</option>
+                                    <option value="Warehouse1">Warehouse 1 (New York)</option>
+                                    <option value="Warehouse2">Warehouse 2 (Los Angeles)</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-1 text-end">
+                                <label class="me-2" for="productType">Product type <i
+                                        class="bi bi-question-circle-fill"></i></label>
+                                <select name="productType" id="productType">
+                                    <option value="All">All</option>
+                                    <option value="Simple">Simple</option>
+                                    <option value="Grouped">Grouped (product woth variants</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-1 text-end">
+                                <label class="me-2" for="published">Published <i
+                                        class="bi bi-question-circle-fill"></i></label>
+                                <select name="published" id="published">
+                                    <option value="All">All</option>
+                                    <option value="Published">Published only</option>
+                                    <option value="Unpublished">Unpublished only</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-1 text-end">
+                                <label for="goSKU">Go directly to SKU <i class="bi bi-question-circle-fill"></i></label>
+                                <input type="text" name="goSKU"><button class="bt8 btn">Go</button>
+                            </div>
+
+                        </div>
+                        <div class="mb-1 mt-2 text-center">
+                            <button class="bt7 btn btn-info"><i class="bi bi-search me-1"></i>Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mx-2 my-3 shadow-sm">
+        <div class="card-body">
+            <p>learn more abput <a href="#">products</a></p>
+            <table class="table table-bordered table-hover table-striped no-footer" width="100%" role="grid"
+                style="margin-left: 0px; width: 100%;">
+                <tbody>
+                    <tr>
+                        <th class="text-center align-middle"><input type="checkbox"></th>
+                        <th class="align-middle">Picture</th>
+                        <th class="align-middle">Product name</th>
+                        <th class="align-middle">SKU</th>
+                        <th class="align-middle">Price</th>
+                        <th class="align-middle">Stock quantity</th>
+                        <th class="text-center align-middle">Published</th>
+                        <th class="text-center align-middle">Edit</th>
+                    </tr>
+                    <tr *ngFor="let p of PRODUCT">
+                        <td class="text-center align-middle"><input type="checkbox"></td>
+                        <td class="align-middle"><img src="{{p.imgUrl}}" alt=""></td>
+                        <td class="align-middle">{{p.name}}</td>
+                        <td class="align-middle">{{p.SKU}}</td>
+                        <td class="align-middle">{{p.price}}</td>
+                        <td class="align-middle">{{p.quantity}}</td>
+                        <td class="text-center fs-2 align-middle"><i class="bi bi-check"></i></td>
+                        <td class="text-center align-middle"><button class="btn btn-light"><i class="bi bi-pencil"></i>
+                                Edit</button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+        <div class="row card-foot mt-1 mb-3 ms-2">
+            <div class="col-5 align-middle">
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn btn-light"><i class="bi bi-caret-left-fill"></i></button>
+                    <button type="button" class="btn btn-outline-primary active">1</button>
+                    <button type="button" class="btn btn-light">2</button>
+                    <button type="button" class="btn btn-light"><i class="bi bi-caret-right-fill"></i></button>
+                </div>
+            </div>
+            <div class="col-3 align-middle">
+                Show
+                <select name="items" id="items" style="width: 15%;">
+                    <option value="7">7</option>
+                    <option selected="selected" value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+                items
+            </div>
+            <div class="col-3 align-middle">
+                <div class="float-lg-right text-center data-tables-refresh">
+                    <p>1-15 of 45 items</p>
+                </div>
+            </div>
+            <div class="col-1 align-middle">
+                <div class="float-lg-right text-center data-tables-refresh">
+                    <div class="dt-buttons btn-group flex-wrap"><button class="btn btn-light" tabindex="0"
+                            aria-controls="average-order-report-grid" type="button"><span class="mx-0"><i
+                                    class="bi bi-arrow-repeat mx-0"></i></span></button> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+.form-login {
+    text-align: center;
+    width: 90%; 
+    max-width: 1200px;
+    padding: 15px;
+    margin: auto;
+  }
+h1 {
+    padding: 0.5rem;
+    color: #14213d;
+border-bottom: 1px solid #e6e6e6;
+}
+  .form-feild {
+    border-top: 1px solid #e6e6e6;
+    background-color: #f9f9f9;
+    padding: 2rem;
+  }
+
+  .form-floating {
+      width: 50%;
+      margin: 1rem auto;
+  }
+
+  div button {
+ 
+      color: white;
+      
+  }
+
+  .formlogin .checkbox {
+    font-weight: 400;
+  }
+  
+  .form-login .form-floating:focus-within {
+    z-index: 2;
+  }
+  
+  .form-login input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .form-login input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .loging-bottom {
+      margin-top: 1rem;
+  }
+  
+  .login-info {
+      text-align: left;
+      color: grey;
+  }
+
+  .alert {
+    margin: 2rem auto;
+    width: 50%;
+  }

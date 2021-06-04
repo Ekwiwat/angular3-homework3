@@ -1,0 +1,207 @@
+<div class="container-fluid px-0">
+    <div id="side-bar" class="sidebar-wrapper shadow" *ngIf="authenticationService.isAuthenticated">
+        <div class="logo-wrapper">
+            <img src="https://res.cloudinary.com/dhg51yakg/image/upload/v1622630716/noplogo_tuf7oo.png" alt="">
+        </div>
+        <div class="search-wrapper pe-3">
+            <form class="search" action="#">
+                <input type="text" placeholder="Search">
+
+            </form>
+        </div>
+        <ul id="myUL" class="pe-3">
+            <li><a [routerLink]="['/dashboard']"><i class="bi bi-display"></i>Dashboard</a></li>
+
+            <li><a [routerLink]="['/products']" class="caret"><i class="bi bi-journal-text"></i>Catalog<span
+                        class="arrow"></span></a>
+                <ul class="nested">
+                    <li><a [routerLink]="['/products']"><i class="bi bi-record-circle"></i>Products</a></li>
+                    <li><a><i class="bi bi-record-circle"></i>Categories</a></li>
+                    <li><a><i class="bi bi-record-circle"></i>Manufacturers</a></li>
+                    <li><a><i class="bi bi-record-circle"></i>Product reviews</a></li>
+                    <li><a><i class="bi bi-record-circle"></i>Product tags</a></li>
+                    <li><a class="caret" href="#"><i class="bi bi-record-circle"></i>Attributes<span
+                                class="arrow"></span></a>
+                        <ul class="nested">
+                            <li><a href="#"><i class="bi bi-circle"></i>Product attributes</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Specification attributes</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Checkout attributes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a class="caret" href="#"><i class="bi bi-cart-fill"></i>Sales<span class="arrow"></span></a>
+                <ul class="nested">
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Orders</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Shipments</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Return requests</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Recuring payments</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Gift cards</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Shopping carts and wishlists</a>
+
+                    </li>
+                </ul>
+            </li>
+
+            <li><a class="caret" href="#"><i class="bi bi-person"></i>Customers<span class="arrow"></span></a>
+                <ul class="nested">
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Customers</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Customer roles</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Online customers</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Vendors</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Activity log</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Activity Types</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>GDPR requests (log)</a></li>
+                </ul>
+            </li>
+
+            <li><a class="caret" href="#"><i class="bi bi-tags-fill"></i>Promotions<span class="arrow"></span></a>
+                <ul class="nested">
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Discounts</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Affiliates</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Newsletter subscibers</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Campaigns</a></li>
+                </ul>
+            </li>
+
+            <li><a class="caret" href="#"><i class="bi bi-card-text"></i>Content management<span
+                        class="arrow"></span></a>
+                <ul class="nested">
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Topics (pages)</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Message templates</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>News items</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>News comments</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Blog posts</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Blog comments</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Polls</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Forums</a></li>
+                </ul>
+            </li>
+            <li><a class="caret" href="#"><i class="bi bi-gear"></i>Configuration<span class="arrow"></span></a>
+                <ul class="nested">
+                    <li><a class="caret" href="#"><i class="bi bi-record-circle"></i>Settings<span
+                                class="arrow"></span></a>
+                        <ul class="nested">
+                            <li><a href="#"><i class="bi bi-circle"></i>General settings</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Customer settings</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Order settings</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Shipping settings</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Tax settings</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Catalog settings</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Shopping cart settings</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Reward points</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>GDPR settings</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Vendor settings</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>ฺฺBlog settings</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>News settings</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Forum settings</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Media settings</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>App settings</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>ALL settings (advanced)</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Email accounts</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Stores</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Countries</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Languages</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Currencies</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Payment methods</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Payment restrictions</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Tax providers</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Tax categories</a></li>
+                    <li><a class="caret" href="#"><i class="bi bi-record-circle"></i>Shipping<span
+                                class="arrow"></span></a>
+                        <ul class="nested">
+                            <li><a href="#"><i class="bi bi-circle"></i>Shipping providers</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Warehouses</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Pickup points</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Dates and ranges</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Measures</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Access control list</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Widgets</a></li>
+                    <li><a class="caret" href="#"><i class="bi bi-record-circle"></i>Authentication<span
+                                class="arrow"></span></a>
+                        <ul class="nested">
+                            <li><a href="#"><i class="bi bi-circle"></i>External authentication</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Multi-factor authentication</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Local plugins</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>All plugins and themes</a></li>
+                </ul>
+            </li>
+            <li><a class="caret" href="#"><i class="bi bi-box"></i>System<span class="arrow"></span></a>
+                <ul class="nested">
+                    <li><a href="#"><i class="bi bi-record-circle"></i>System information</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Log</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Warnings</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Maintenance</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Message queue</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Schedule tasks</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Search engine friendly page names</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Templates</a></li>
+                </ul>
+            </li>
+            <li><a class="caret" href="#"><i class="bi bi-graph-up"></i>Reports<span class="arrow"></span></a>
+                <ul class="nested">
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Sales summary</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Low stock</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Bestsellers</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Products never purchased</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Country sales</a></li>
+                    <li><a class="caret" href="#"><i class="bi bi-record-circle"></i>Customer reports<span
+                                class="arrow"></span></a>
+                        <ul class="nested">
+                            <li><a href="#"><i class="bi bi-circle"></i>Registered customers</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Customers by order total</a></li>
+                            <li><a href="#"><i class="bi bi-circle"></i>Customers by number of orders</a></li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+            </li>
+            <li><a class="caret" href="#"><i class="bi bi-question-circle-fill"></i>Help<span class="arrow"></span></a>
+                <ul class="nested">
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Help topics</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Community forums</a></li>
+                    <li><a href="#"><i class="bi bi-record-circle"></i>Premium support services</a></li>
+
+                </ul>
+            </li>
+
+
+        </ul>
+    </div>
+    <div class="right-col">
+
+        <div class="top-menu" *ngIf="authenticationService.isAuthenticated">
+            <div class="left-icon">
+                <a class="toggle2"><i class="bi bi-list"></i></a>
+            </div>
+            <div class="right-icon">
+                <ul>
+                    <li class="login-name">John Smith</li>
+                    <li><a>Logout</a></li>
+                    <li><i class="bi bi-gear"></i></li>
+
+                </ul>
+
+
+            </div>
+
+        </div>
+
+        <div>
+            <!-- <app-products></app-products> -->
+            <!-- <app-dashboard></app-dashboard> -->
+
+            <router-outlet></router-outlet>
+        </div>
+
+    </div>
+</div>
